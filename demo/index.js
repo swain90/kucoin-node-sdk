@@ -1,6 +1,6 @@
 const API = require('../src');
 
-API.init(require('./config'));
+API.init(require('./config.tpl'));
 
 const main = async () => {
   const getTimestampRl = await API.rest.Others.getTimestamp();
